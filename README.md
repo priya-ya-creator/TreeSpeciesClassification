@@ -1,55 +1,36 @@
-# 🌿 Tree Species Classification
+🌳 Tree Species Classification Assistant
+An AI-powered tool that combines geolocation and computer vision to predict tree species using both GPS and leaf images.
 
-A machine learning project focused on classifying different species of trees using supervised learning techniques. The project utilizes various features of tree data and applies models like Decision Trees and Random Forest to predict the correct species.
+🎯 Project Objective
+To develop a smart web-based assistant that:
 
-This repository includes:
+📍 Suggests tree species based on environmental and geographic data
 
-📘 Tree_Species_Classification.ipynb – A Jupyter Notebook that builds a model to classify tree species based on image data.
-📦 Tree_classification_dataset.zip – The dataset used for training and testing the classification model.
+📷 Identifies tree species from user-uploaded images using deep learning
 
-📌 Features
-📸 Image-Based Classification
-Classifies tree species using a custom-trained Convolutional Neural Network (CNN) from uploaded images.
+🌐 Maps tree distributions across U.S. cities using big forestry datasets
 
-🧭 Geo-Intelligent Recommendations
-Uses K-Nearest Neighbors (KNN) with geolocation data (latitude, longitude, native status, diameter) to recommend likely species for a given area.
+🔍 Problem Overview
+Traditional tree identification methods depend heavily on human expertise and manual surveys — making them inefficient and hard to scale. This project proposes a hybrid AI solution using both geolocation data and image recognition to streamline species classification.
 
-🌐 Interactive Web Interface
-Built with Streamlit for smooth, user-friendly interaction and visual feedback.
+🧠 Core Features
+Location-Based Recommender
+Predicts likely species using KNN and features like latitude, longitude, and native status.
 
-📊 Big Data Integration
-Processes and visualizes over 1.38 million urban tree records from 50+ U.S. cities.
+Image-Based Classifier
+Trained CNN model identifies species from tree images (leaves, bark, etc.)
 
-☁️ Deployment Ready
-Streamlit app optimized for cloud deployment (Heroku/Streamlit Cloud/Docker).
+Visual Dashboard
+Streamlit-powered app offers a clean UI with real-time map and prediction outputs.
 
-🧰 Technologies Used
-Machine Learning: TensorFlow, scikit-learn
+Big Data-Driven
+Built on 1.38M+ urban tree records from 50+ U.S. cities.
 
-Data Science: Pandas, NumPy, Matplotlib
-
-Web UI: Streamlit
-
-Geo Intelligence: KNN, GPS coordinates
-
-Model Management: joblib, .h5 files
-
-Image Tools: Pillow, ImageDataGenerator
-
-🎯 Use Cases
-🌲 Urban forestry and biodiversity planning
-
-🎓 Educational tool for botany and ecology students
-
-🧠 Smart assistant for field ecologists and researchers
-
-📷 Citizen science engagement through AI image uploads
-
-🔮 Future Enhancements
-📱 Mobile app with real-time prediction via camera
-
-🌍 Expand species support globally
-
-🧠 Add AR-based tree identification
-
-📦 API service for third-party ecological tools
+🧰 Tech Stack
+Category	Tools Used
+ML & DL Frameworks	TensorFlow, scikit-learn
+Data Processing	Pandas, NumPy, Matplotlib
+Web App Framework	Streamlit
+Model Deployment	joblib, HDF5 (.h5), Docker
+Image Handling	Pillow, OpenCV, ImageDataGenerator
+Geospatial Logic	KNN, GPS data, StandardScaler
